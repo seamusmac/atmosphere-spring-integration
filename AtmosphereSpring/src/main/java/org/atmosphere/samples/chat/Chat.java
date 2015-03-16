@@ -26,7 +26,6 @@ import org.atmosphere.config.service.Ready;
 import org.atmosphere.cpr.AtmosphereResource;
 import org.atmosphere.cpr.AtmosphereResourceEvent;
 import org.atmosphere.cpr.BroadcasterFactory;
-import org.atmosphere.samples.chat.custom.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,7 +35,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * supports all transports, support message length garantee, heart beat, message
  * cache thanks to the {@link ManagedService}.
  */
-@Config
 @ManagedService(path = "/chat", atmosphereConfig = MAX_INACTIVE + "=120000")
 public class Chat {
 
